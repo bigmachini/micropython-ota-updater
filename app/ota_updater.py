@@ -106,7 +106,7 @@ class OTAUpdater:
         print('Checking version... ')
         print('\tCurrent version: ', current_version)
         print('\tLatest version: ', latest_version)
-        return (current_version, latest_version)
+        return current_version, latest_version
 
     def _create_new_version_file(self, latest_version):
         self.mkdir(self.modulepath(self.new_version_dir))
